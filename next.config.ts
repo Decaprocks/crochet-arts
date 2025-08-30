@@ -5,7 +5,9 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   images: {
     unoptimized: true
-  }
+  },
+  basePath: process.env.NODE_ENV === 'production' ? '/crochet-arts' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/crochet-arts' : ''
 };
 
 export default nextConfig;
