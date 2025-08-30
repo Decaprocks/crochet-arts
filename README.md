@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Crochet Arts Website
 
-## Getting Started
+A beautiful portfolio website showcasing handcrafted crochet creations, built with Next.js and Tailwind CSS.
 
-First, run the development server:
+## Features
+
+- 🎨 Gallery of crochet artworks
+- 👩‍🎨 Artist information and bio
+- 📱 Responsive design
+- 🎠 Banner slider
+- 📧 Contact information
+- 🌐 About page
+
+## Tech Stack
+
+- **Framework**: Next.js 15
+- **Styling**: Tailwind CSS
+- **Language**: TypeScript
+- **Deployment**: GitHub Pages
+
+## Local Development
+
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Run development server:**
+   ```bash
+   npm run dev
+   ```
+
+3. **Open browser:**
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+## Deployment to GitHub Pages
+
+### Step 1: Create GitHub Repository
+
+1. Go to [GitHub](https://github.com) and create a new repository
+2. Name it `crochet-arts` (or your preferred name)
+3. Make it public
+4. Don't initialize with README (we already have one)
+
+### Step 2: Connect Local Repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git remote add origin https://github.com/YOUR_USERNAME/crochet-arts.git
+git branch -M main
+git push -u origin main
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Step 3: Enable GitHub Pages
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Go to your repository on GitHub
+2. Click **Settings** tab
+3. Scroll down to **Pages** section
+4. Under **Source**, select **GitHub Actions**
+5. Click **Configure** button
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Step 4: Push Changes
 
-## Learn More
+```bash
+git add .
+git commit -m "Setup GitHub Pages deployment"
+git push
+```
 
-To learn more about Next.js, take a look at the following resources:
+The GitHub Actions workflow will automatically:
+- Build your Next.js app
+- Deploy it to GitHub Pages
+- Make it available at: `https://YOUR_USERNAME.github.io/crochet-arts`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+crochet-arts/
+├── src/
+│   ├── app/
+│   │   ├── page.tsx          # Homepage
+│   │   ├── about/
+│   │   │   └── page.tsx      # About page
+│   │   ├── layout.tsx        # Root layout
+│   │   └── globals.css       # Global styles
+│   └── components/
+│       └── BannerSlider.tsx  # Banner slider component
+├── public/
+│   └── images/               # Image assets
+├── .github/
+│   └── workflows/
+│       └── deploy.yml        # GitHub Actions workflow
+└── tailwind.config.js        # Tailwind configuration
+```
 
-## Deploy on Vercel
+## Customization
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Adding New Images
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Place your images in `public/images/`
+2. Use `.jpg` format
+3. Update the `galleryWorks` array in `src/app/page.tsx`
+
+### Modifying Content
+
+- **Homepage**: Edit `src/app/page.tsx`
+- **About page**: Edit `src/app/about/page.tsx`
+- **Styling**: Modify `src/app/globals.css` or use Tailwind classes
+
+## Support
+
+For issues or questions, please check:
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [GitHub Pages Documentation](https://docs.github.com/en/pages)
+
+---
+
+Made with ❤️ using Next.js and Tailwind CSS
