@@ -5,7 +5,9 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   images: {
     unoptimized: true
-  }
+  },
+  basePath: '/crochet-arts',
+  assetPrefix: '/crochet-arts'
 };
 
 export default nextConfig;
