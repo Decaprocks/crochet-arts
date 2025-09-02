@@ -30,7 +30,7 @@ export default function AboutPage() {
             <div>
               <div className="w-full h-80 rounded-2xl overflow-hidden relative mb-8">
                 <Image
-                  src="/images/artist.jpg"
+                  src="/crochet-arts/images/artist.jpg"
                   alt="Artist portrait"
                   fill
                   className="object-cover"

@@ -96,7 +96,7 @@ export default function Home() {
               <div key={work.id} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
                 <div className="relative h-64 rounded-t-xl overflow-hidden">
                   <Image
-                    src={`/images/${work.id}.jpg`}
+                    src={`/crochet-arts/images/${work.id}.jpg`}
                     alt={work.title}
                     fill
                     className="object-cover"
@@ -136,7 +136,7 @@ export default function Home() {
             <div className="relative">
               <div className="w-full h-96 bg-gradient-to-br from-pink-100 to-purple-100 rounded-2xl flex items-center justify-center overflow-hidden">
                 <Image
-                  src="/images/artist.jpg"
+                  src="/crochet-arts/images/artist.jpg"
                   alt="Artist portrait"
                   fill
                   className="object-cover"
